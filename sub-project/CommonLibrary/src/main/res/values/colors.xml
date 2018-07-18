@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+    <!-- 灰色线背静 -->
+    <color name="line_gray">#E0E0E0</color>
+    <!-- 图片选择器背景 -->
+    <!-- 表情列表背景 -->
+    <!-- 标题颜色 -->
+    <!-- 副标题颜色 -->
+    <!-- 副标题颜色 -->
+    <color name="gray">#AAAAAA</color>
+    <!-- 红色 -->
+    <!-- 聊天缩略图背景 -->
+    <!-- 聊天缩略图背景 -->
+    <!-- 话题详情用户列表背景 -->
+    <!-- 话题详情用户列表背景 -->
+    <!-- 话题评论背景 -->
+    <!-- 评论回复更多文字颜色 -->
+    <color name="comment_reply_more">#027FDA</color>
+    <!-- 灰色背景 -->
+</resources>

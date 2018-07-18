@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.didi.virtualapk.plugin'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.test.plugin"
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+    }
+
+    signingConfigs {
+        debug {
+            keyAlias 'jiaziying'
+            keyPassword 'jiaziying'
+            storeFile file('stockcode.jks')
+            storePassword 'jiaziying'
+//            v2SigningEnabled false
+        }
+        releaseConfig {
+            keyAlias 'jiaziying'
+            keyPassword 'jiaziying'
+            storeFile file('stockcode.jks')
+            storePassword 'jiaziying'
+//            v2SigningEnabled false
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig android.signingConfigs.releaseConfig
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation "com.github.bumptech.glide:glide:4.5.0"
+    implementation 'com.android.support:appcompat-v7:26.+'
+    implementation 'com.android.support:support-v4:26.+'
+    implementation 'com.android.support:support-annotations:26.+'
+    implementation files('../../ExternalAAR/ormlite-android-4.48.jar')
+    implementation files('../../ExternalAAR/ormlite-core-4.48.jar')
+    implementation files('../../ExternalAAR/eventbus-3.1.1.jar')
+    implementation project(':sub-project:HttpLibrary')
+    implementation project(':sub-project:CommonLibrary')
+}
+
+virtualApk {
+    packageId = 0x6f             // The package id of Resources.
+    targetHost = '../../app' // The path of application module in host project.
+    applyHostMapping = true      // [Optional] Default value is true. 
+}

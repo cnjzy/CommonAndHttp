@@ -1,0 +1,12 @@
+<resources>
+    <!-- 线高度 -->
+    <dimen name="global_line_size">1px</dimen>
+    <!-- 聊天评论线 -->
+    <!-- 圆角图片角度 -->
+
+    <!-- 用的比较多的margin -->
+
+    <!-- 列表线宽度 -->
+
+    <!-- 公用头部高度 -->
+</resources>
