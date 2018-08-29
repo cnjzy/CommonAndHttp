@@ -10,8 +10,14 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/sub-project" />
+            <option value="$PROJECT_DIR$/sub-project/BaseLibrary" />
             <option value="$PROJECT_DIR$/sub-project/CommonLibrary" />
             <option value="$PROJECT_DIR$/sub-project/HttpLibrary" />
+            <option value="$PROJECT_DIR$/sub-project/ThirdCoordinator" />
+            <option value="$PROJECT_DIR$/sub-project/jiaozivideoplayer" />
+            <option value="$PROJECT_DIR$/sub-project/picture_library" />
+            <option value="$PROJECT_DIR$/sub-project/ucrop" />
+            <option value="$PROJECT_DIR$/sub-project/xrecyclerview" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

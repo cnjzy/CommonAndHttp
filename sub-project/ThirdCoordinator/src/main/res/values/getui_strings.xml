@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="push_transmission_data">收到一条透传测试消息</string>
+</resources>
